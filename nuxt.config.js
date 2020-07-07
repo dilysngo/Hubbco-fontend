@@ -74,5 +74,5 @@ module.exports = {
             productionTip: true,
             devtools: true
         }
-      }
+    }
 };

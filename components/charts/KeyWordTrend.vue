@@ -2,7 +2,12 @@
 import {Line} from 'vue-chartjs';
 export default {
     extends: Line,
-    props: ['data', 'options'],
+    props: {
+        data: {
+            type: Object,
+            default: () => {}
+        },
+    },
     mounted() {
         this.renderChart(this.data, this.options);
     }
